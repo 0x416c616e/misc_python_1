@@ -173,4 +173,173 @@ print(dinner_message1 + dinner_list[4] + "!")
 print(dinner_message1 + dinner_list[5] + "!")
 print(dinner_message1 + dinner_list[6] + "!")
 
+print("=" * 40)
+
+#========================================
+'''
+Exercise 3-6 more guests
+you found a bigger dinner table, so now more space is available.
+Think of three more guests to invite to dinner
+Tim Berners-Lee
+John McCarthy
+Edsger Dijkstra
+
+'''
+#use insert() to add someone to the beginning
+dinner_list.insert(0, 'Tim Berners-Lee')
+#add someone to the middle
+print(len(dinner_list)) #8
+dinner_list.insert(4, 'John McCarthy')
+#append() to add someone to the end of the list
+dinner_list.append('Edsger Dijkstra')
+
+print(dinner_message1 + dinner_list[0] + "!")
+print(dinner_message1 + dinner_list[1] + "!")
+print(dinner_message1 + dinner_list[2] + "!")
+print(dinner_message1 + dinner_list[3] + "!")
+print(dinner_message1 + dinner_list[4] + "!")
+print(dinner_message1 + dinner_list[5] + "!")
+print(dinner_message1 + dinner_list[6] + "!")
+print(dinner_message1 + dinner_list[7] + "!")
+print(dinner_message1 + dinner_list[8] + "!")
+print(dinner_message1 + dinner_list[9] + "!")
+
+print("~"*40)
+#====================================
+'''
+Exercise 3-7 shrinking guest list
+you found out that the new dinner table won't arrive in time for the dinner,
+and you have space for only two guests
+use pop() to remove guests one at a time, and say sorry they can't come after all
+'''
+goodbye_part1 = "Sorry, "
+goobye_part2 = ", but you gotta go!"
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+print((goodbye_part1 + dinner_list.pop() + goobye_part2))
+#let the two remaining people know they're still invited
+print("You're still invited, " + dinner_list[0])
+print("You're still invited, " + dinner_list[1])
+
+#use del for the remaining two names, so now you'll have
+del dinner_list[1]
+del dinner_list[0]
+
+print(dinner_list)
+
+
+#=======================================
+print("next section: sorting a list")
+#sorting a list permanently with sort()
+#you can use sort() or sort(reverse=True)
+#or you can sort temporarily with the sorted() function
+#you can also use sorted(reverse=True)
+#len() returns the length of a list
+
+#===============================
+'''
+Exercise 3-8: seeing the world
+think of at least five places in the world you'd like to visit
+Russia
+Canada
+England
+South Korea
+Japan
+Australia
+New Zealand
+store the locations in a list and make sure it's not in alphabetical order
+'''
+travel_destinations = ['Russia', 'Canada', 'England', 'South Korea', 'Australia', 'New Zealand']
+print(travel_destinations)
+#temp sorting
+print(sorted(travel_destinations))
+print("remember that sorted is temporary and doesn't permanently sort the list")
+print("see:")
+print(travel_destinations)
+#reverse it
+print(sorted(travel_destinations, reverse=True))
+print("but that was only another temp sort")
+
+#use sort() to change your list so it's stored in alphabetical order
+#this is permanent
+travel_destinations.sort()
+print("permanent list sort:")
+print(travel_destinations)
+#permanently reverse sort it
+print("permanently reversed")
+travel_destinations.sort(reverse=True)
+print(travel_destinations)
+print("~_~_~_~_~_~_~_~_~_~_~_~_~_~_~_~_")
+#==================================
+'''
+Exercise 3-9 dinner guests
+working with something from 3-4 to 3-7, use len() to print a message
+indicating the number of people you are inviting to dinner
+'''
+dinner_list_3_9 = ['Linus Torvalds', 'Richard Stallman', 'Tim Berners-Lee',
+               'Brian Kernighan', 'Bill Gates', 'Ada Lovelace', 'Grace Hopper']
+
+print("I am inviting " + str(len(dinner_list_3_9)) + " people to dinner")
+#=======================================
+'''
+Exercise 3-10 every function
+think of something you could store in a list
+for example, you could make a list of mountains or cities
+write a program that creates a list containing these items and uses each function from
+this chapter at least once
+let's first get a list of all the functions:
+sort()
+sorted()OK
+sorted(reverse=True)
+sort(reverse=True)OK
+append()OK
+remove()OK
+pop()OK
+insert()OK
+delOK
+title()OK
+'''
+
+city_list = ['Tokyo', 'Shanghai', 'Hangzhou', 'Beijing', 'Moscow', 'Tbilisi',
+             'St. Louis', 'Chicago', 'Toronto', 'Melbourne', 'Auckland', 'Helsinki',
+             'Sydney', 'LONDON', 'Seoul', 'Montreal', 'Los Angeles', 'San Francisco',
+             'Shenzhen', 'Hyderabad', 'Berlin']
+print("The first city in this list is " + city_list.pop(0))
+print("Now the first in the list is " + city_list[0])
+del city_list[-1]
+print(city_list[12].title()) #title capitalization instead of all caps like it's in the list
+city_list.insert(5, 'NYC')
+city_list.remove('Melbourne')
+city_list.append('Halifax')
+print("temp in-order sorting of city list: ")
+print(sorted(city_list))
+#permanent reverse sorting
+city_list.sort(reverse=True)
+print(city_list)
+#now permanent regular sorting
+city_list.sort()
+#now temp reverse sorting
+print(sorted(city_list, reverse=True))
+
+#had to typecast the number to a strnig with the str() function
+#not sure if that was covered in this book so far or not but oh well
+#don't get an index error
+#start counting with zero and don't go over the limit
+#if you do, you will get IndexError: list index out of range
+
+print("end of 3-10")
+#=======================================================
+'''
+Exercise 3-11 intentional error
+if you haven't received an index error in one of your programs yet,
+make one happen on purpose
+then change it back afterwards
+
+'''
+#ok, did it and changed it back
 
