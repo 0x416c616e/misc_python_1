@@ -74,7 +74,103 @@ print(coolString + coolCars[-4] + ".")
 #changing an existing value
 coolCars[0] = 'Ford Mustang'
 print(coolCars[0])
+
+#APPENDING
 coolCars.append('Hennessey Venom F5')
 print("Cool cars list now has an additional car: \n", coolCars)
+
+coolCars2 = [] #starting blank
+coolCars2.append('Chevy Camaro')
+coolCars2.append('Mitsubishi Lancer Evo')
+coolCars2.append('Honda S2000')
+print(coolCars2)
+
+#==============
+#INSERTION
+coolCars2.insert(0, 'Dodge Viper')
+print(coolCars2)
+
+#===========
+#REMOVING
+del coolCars2[1] #goodbye, camaro
+print(coolCars2)
+
+#removing with pop() instead of delete
+#pop is for the stack data structure and will return whatever you popped
+print("popping coolCars2:")
+print(coolCars2.pop())
+
+print("here's what's left:")
+print(coolCars2)
+#by default, it popped what was at the end of the list
+someCar = coolCars2.pop()
+#you can assign what was popped to a new variable
+print("someCar is " + someCar)
+#you can also pop at a specific location, which is unlike a traditional stack
+#pop(1) or pop(5) or pop(n) really
+anotherCar = coolCars.pop(0) #first item in the list
+print("anotherCar is " + anotherCar)
+'''
+I am getting back into camelCase because that's what I was used to in Java
+but I should really go back to using snake_case for python even though
+I don't like it as much.
+'''
+print("="*30)
+#=================
+#REMOVING BY VALUE
+print(coolCars)
+coolCars.remove('Acura NSX')
+print(coolCars)
+#note: remove() only gets rid of the first occurence of what you're removing
+#if there are two of the same value in the list, the second one will stay
+
+#=========================================
+'''
+Exercise 3-4: guest list 
+if you could invite anyone, living or deceased, to dinner, who would you invite?
+make a list that includes at least three people you'd like to invite to dinner
+then use your list to print a message to each person, inviting them to dinner
+'''
+dinner_list = ['Linus Torvalds', 'Richard Stallman', 'Tim Berners-Lee',
+               'Brian Kernighan', 'Bill Gates', 'Ada Lovelace', 'Grace Hopper']
+
+dinner_message1 = "Hello! Let's get food some time, "
+print(dinner_message1 + dinner_list[0] + "!")
+print(dinner_message1 + dinner_list[1] + "!")
+print(dinner_message1 + dinner_list[2] + "!")
+print(dinner_message1 + dinner_list[3] + "!")
+print(dinner_message1 + dinner_list[4] + "!")
+print(dinner_message1 + dinner_list[5] + "!")
+print(dinner_message1 + dinner_list[6] + "!")
+
+
+
+#======================================
+'''
+Exercise 3-5 guest list
+you just head that one of your guests can't make the dinner, so you need
+to send out a new set of invitations
+you'll have to think of someone else to invite
+'''
+print("="*40)
+print(dinner_message1 + dinner_list[0] + "!")
+print(dinner_message1 + dinner_list[1] + "!")
+print(dinner_message1 + dinner_list[2] + "!")
+print(dinner_message1 + dinner_list[3] + "!")
+print(dinner_message1 + dinner_list[4] + "!")
+print(dinner_message1 + dinner_list[5] + "!")
+print(dinner_message1 + dinner_list[6] + "!")
+
+print(dinner_list[0] + " can't make it after all!")
+dinner_list[0] = 'Steve Wozniak'
+print(dinner_list[0] + "will be coming instead!")
+print("New list:")
+print(dinner_message1 + dinner_list[0] + "!")
+print(dinner_message1 + dinner_list[1] + "!")
+print(dinner_message1 + dinner_list[2] + "!")
+print(dinner_message1 + dinner_list[3] + "!")
+print(dinner_message1 + dinner_list[4] + "!")
+print(dinner_message1 + dinner_list[5] + "!")
+print(dinner_message1 + dinner_list[6] + "!")
 
 
