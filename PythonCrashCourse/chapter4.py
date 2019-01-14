@@ -149,7 +149,7 @@ did they only want me to do a for loop instead?
 whatever, I already did it
 '''
 
-#LIST SLICE
+# LIST SLICE
 # part of a list
 # a specific group of items in a list in python
 # is called a SLICE
@@ -157,4 +157,141 @@ whatever, I already did it
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3]) # prints elements 0, 1, and 2 -- not three!
 # the above is an example of a list slice
+
+# you can loop through a slice instead of looping through an entire list
+# example below:
+letters = 'a b c d e f'.split()
+for letter in letters[:3]:
+    print(letter.title())
+
+# how to copy a list to another list using a slice
+letters2 = letters[:]
+letters2.append('g')
+print("letters2:")
+print(letters2)
+print("letters:")
+print(letters)
+# deep copy vs. shallow copy and all that jazz
+# if you did a simple assignment without a slide, both lists
+# would be just two different ways of pointing to the same list
+# rather than two separate list variables
+
+# EXERCISE 4-10 SLICES
+'''
+using one of the programs you wrote in this chapter, add several lines to the 
+end of the program that does the following:
+1. print the message, "the first three items in the list are"
+and then a slice to print the first three items in the list
+2. print the message: three items from the middle of the list are:
+and then a slice to print three items from the middle of the list
+3. finally print the message "the last three items in the list are:"
+followed by the last three items in the list
+'''
+# honestly I feel like this chapter has gone on for way too long about
+# lists, I get it and this is a waste of time
+
+cars_list = ['Ferrari', 'Chevrolet', 'Audi', 'Mercedes', 'Ford',
+             'Toyota', 'Mazda', 'Hyundai', 'BMW', 'Fiat']
+print("the first three items in the list are: ")
+print(cars_list[0:3])
+print("three items from the middle of the list are:")
+print(cars_list[4:7])
+print("the last three items in the list are:")
+print(cars_list[-3:len(cars_list)])
+
+# EXERCISE 4-11 my pizzas, your pizzas
+'''
+use your program from 4-1
+make a copy of pizzas, and call it friend_pizzas
+then do the following steps:
+-add a new pizza to the original second list
+-add a different pizza to the list
+-prove that the two lists are different by
+printing the message: 
+"my favorite pizzas are" and then use a for
+loop to print the first list
+print the message "my friend's favorite pizzas are"
+and then use a for loop to print the second list
+'''
+favorite_pizzas1 = ['pepperoni', 'mushroom', 'sausage']
+friend_pizzas = favorite_pizzas1[:]
+favorite_pizzas1.append('pineapple')
+friend_pizzas.append('deep dish')
+print("my favorite pizzas are: ", end="")
+for pizza in favorite_pizzas1:
+    print(pizza + " ", end="")
+print("\nmy friend's favorite pizzas are: ", end="")
+for pizza in friend_pizzas:
+    print(pizza + " ", end="")
+
+# exercise 4-12 more loops
+'''
+all versions of food.py in this section have avoided
+using for loops when printing to save space
+choose a version of foods.py, and write two for loops
+to print each list of foods
+'''
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("my foods:")
+for food in my_foods:
+    print(food)
+print("friend's foods:")
+for food in friend_foods:
+    print(food)
+
+
+# done with lists now
+
+# TUPLES
+# python refers to a value that can't change as being immutable
+# an immutable list is called a tuple
+# tell me something I don't know
+# this is kind of a waste of time because it's such basic review
+# but oh well
+# a list uses square brackets
+# but a tuple uses parentheses
+'''
+writing over a tuple
+you can't modify a value in a tuple
+however, you can redefine the entire tuple
+'''
+
+# tuple is like const in java
+# use it for things that don't change and shouldn't be able to be changed
+
+# exercise 4-13 buffet
+'''
+a buffet-style restaurant offers only five basic foods
+think of five simple foods and store them in a tuple
+
+use a for loop to print each food offered by the restaurant
+try to modify one of the items, and make sure python won't let you
+the restaurant changes its menu, so rewrite the tuple
+and then use a for loop to print the items in the new menu
+'''
+buffet_menu = ('salad', 'chicken', 'soup', 'green beans', 'steak')
+for item in buffet_menu:
+    print(item)
+# now replace it
+buffet_menu = ('salad', 'chicken', 'soup', 'carrots', 'salmon')
+for item in buffet_menu:
+    print(item)
+# so you can replace an entire tuple, but not an individual value in it
+
+# lines should be less than 80 characters, generally
+
+# exercise 4-15 code review
+'''
+choose three of the progams you've written in this chapter and 
+modify each one to comply with PEP 8
+use four spaces for each identation level
+use less than 80 characters on each line
+don't use blank lines excessively in your program files
+
+'''
+# my programs are basically pep 8 compliant as-is
+
 
