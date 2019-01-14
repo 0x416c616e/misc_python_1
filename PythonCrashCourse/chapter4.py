@@ -54,3 +54,107 @@ for value in range(1,11):
     squares.append(square)
 print(squares)
 
+# some other useful functions casually mentioned in this chapter:
+# min(), max(), sum()
+# these can be used with lists
+
+#LIST COMPREHENSION
+#comprehension allows you to generate this same list in just one line of code
+
+#below is an example of list comprehension
+squares_comprehension = [value**2 for value in range(1,11)]
+print(squares_comprehension)
+#same as above multi-line for loop but this is a lot more compact
+'''
+exercise 4-3 counting to twenty
+use a for loop to print the numbers from 1 to 20, inclusive
+'''
+for i in range(1,21):
+    print(i)
+
+'''
+exercise 4-4 one million
+make a lit of the nums from one to a million, then use a for loop
+to print them out
+'''
+# for i in range(1,1000001):
+#    print(i)
+# I ran it but I'm commenting it out because it makes this program take longer to run,
+# which is not desirable considering the way I am running it many times in quick succession
+# when I make small changes frequently and then rebuild/run it
+'''
+summing a million
+make a list of the nums from one to a million, and then use the min()
+and max() functions to make sure your list actually starts at once and
+ends at a million
+then finally, use the sum() function to see how quickly python can add
+a million numbers
+'''
+million_comprehension = [value for value in range(1,1000001)]
+print("min in the million list: " + str(min(million_comprehension)))
+print("max in the million list: " + str(max(million_comprehension)))
+print("sum of all digits from 1 to a million: " + str(sum(million_comprehension)))
+# tested it and it worked as expected
+# also the comprehension didn't take much time at all
+# doing the print for all the digits from 1 to a million took a long time,
+# maybe because of glyph rendering and how my IDE handles characters and
+# lines of output
+
+print("moving on...")
+print("="*40)
+# ==========================================================
+'''
+exercise 4-6 odd numbers
+use the third argument of the range() function to make a list
+of the odd numbers from 1 to 20. use a for loop to print each
+number. 
+'''
+# every other number, so every 2 (the third arg to the function)
+# but starting at 1 means 1, 3, 5 etc
+# whereas starting with 0 would mean 0, 2, 4, etc
+odd_list = [iterator for iterator in range(1,21,2)]
+for item in odd_list:
+    print(item)
+# this is very easy stuff but hopefully I will eventually get to
+# more advanced stuff
+
+'''
+exercise 4-7 threes
+make a list of multiples of 3 from 3 to 30
+use a for loop to print the numbers in your list
+'''
+
+multiples_of_three = [i for i in range(3,31,3)]
+for item in multiples_of_three:
+    print(item)
+
+'''
+exercise 4-8 cubes
+a number raised to the third power is called a cube
+for example, the cube of 2 is written as 2**3 in python
+make a list of the first 10 cubes (cube of each int from 1 through 10)
+and use a for loop to print out the value of each cube
+'''
+print("cubes below===============")
+
+cubes_comprehension = [i**3 for i in range(1,11)]
+for item in cubes_comprehension:
+    print(item)
+
+'''
+exercise 4-9 cube comprehension
+use a list comprehension to generate a list of the first 10 cubes
+uhhh I already did that in part 4-8
+did they only want me to do a for loop instead?
+whatever, I already did it
+'''
+
+#LIST SLICE
+# part of a list
+# a specific group of items in a list in python
+# is called a SLICE
+
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3]) # prints elements 0, 1, and 2 -- not three!
+# the above is an example of a list slice
+
