@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0892fca6-662b-4abd-9361-f0213ca3d545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter6.py">
+        <entry file="file://$PROJECT_DIR$/chapter7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -48,10 +48,11 @@
         <option value="$PROJECT_DIR$/chapter4.py" />
         <option value="$PROJECT_DIR$/chapter5.py" />
         <option value="$PROJECT_DIR$/chapter6.py" />
+        <option value="$PROJECT_DIR$/chapter7.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="745" />
     <option name="width" value="1182" />
     <option name="height" value="900" />
@@ -101,7 +102,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="chapter6" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="chapter7" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonCrashCourse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,10 +138,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="745" y="0" width="1182" height="900" extended-state="0" />
+    <frame x="745" y="0" width="1182" height="900" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09965035" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17307693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -202,6 +203,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
