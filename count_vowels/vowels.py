@@ -13,7 +13,7 @@ def count_vowels(str_to_check):
 def main():
     if (len(sys.argv) == 1):
         print("Error: lacking CLI args")
-        print("Use it like this: count_vowels.py hello world ok")
+        print("Use it like this: vowels.py hello world ok")
         sys.exit(1)
     else:
         total = 0
